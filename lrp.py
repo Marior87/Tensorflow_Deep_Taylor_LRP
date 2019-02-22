@@ -164,7 +164,7 @@ def visualize(im_list, xval):
             I = np.mean(np.maximum(im_list[j][i], 0), -1)
             I = np.minimum(I, np.percentile(I, 99))
             I = I/np.max(I)
-            print "np.linalg.norm(I)", np.linalg.norm(I)
+            print("np.linalg.norm(I)", np.linalg.norm(I))
             plt.imshow(I, cmap="gray")
 
         plt.show()
